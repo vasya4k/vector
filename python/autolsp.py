@@ -12,7 +12,11 @@ import time
 import json
 from collections import defaultdict
 
-threshold = 130000
+
+######Global Config
+threshold = 145000
+freq = 10
+
 
 class Elasticsearch_DB:
     def __init__(self, ip):
@@ -94,7 +98,7 @@ def periodic_schedule(scheduler, fun):
 
             sw.lsp += 1
 
-    scheduler.enter(10, 1, periodic_schedule, (scheduler,fun))
+    scheduler.enter(freq, 1, periodic_schedule, (scheduler,fun))
 
 def create_cmd(lsp, to):
     common_part = "set protocols mpls label-switched-path " + lsp + " "
