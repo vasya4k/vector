@@ -1,0 +1,130 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/15.1F4/junos">
+    <mpls-lsp-information xmlns="http://xml.juniper.net/junos/15.1F4/junos-routing">
+        <rsvp-session-data>
+            <session-type>Ingress</session-type>
+            <count>2</count>
+            <rsvp-session junos:style="detail">
+                <mpls-lsp>
+                    <destination-address>88.88.88.88</destination-address>
+                    <source-address>77.77.77.77</source-address>
+                    <lsp-state>Up</lsp-state>
+                    <route-count>0</route-count>
+                    <name>VMX7-VMX8</name>
+                    <lsp-description></lsp-description>
+                    <active-path> (primary)</active-path>
+                    <is-nodeprotection/>
+                    <lsp-type>Static Configured</lsp-type>
+                    <egress-label-operation>Penultimate hop popping</egress-label-operation>
+                    <load-balance>least-fill</load-balance>
+                    <mpls-lsp-autobandwidth>
+                        <minimum-bandwidth>100kbps</minimum-bandwidth>
+                        <maximum-bandwidth>100Gbps</maximum-bandwidth>
+                        <adjust-timer>540</adjust-timer>
+                        <adjust-threshold>5</adjust-threshold>
+                        <maximum-average-bandwidth>0bps</maximum-average-bandwidth>
+                        <time-to-adjust>441</time-to-adjust>
+                        <overflow-limit>0</overflow-limit>
+                        <overflow-sample-count>0</overflow-sample-count>
+                        <underflow-limit>0</underflow-limit>
+                        <underflow-sample-count>0</underflow-sample-count>
+                        <underflow-max-avg-bandwidth>0bps</underflow-max-avg-bandwidth>
+                    </mpls-lsp-autobandwidth>
+                    <mpls-lsp-attributes>
+                        <encoding-type>Packet</encoding-type>
+                        <switching-type>Packet</switching-type>
+                        <gpid>IPv4</gpid>
+                        <mpls-lsp-upstream-label>
+                        </mpls-lsp-upstream-label>
+                    </mpls-lsp-attributes>
+                    <mpls-lsp-path>
+                        <title>Primary</title>
+                        <name></name>
+                        <path-active/>
+                        <path-state>Up</path-state>
+                        <setup-priority>7</setup-priority>
+                        <hold-priority>0</hold-priority>
+                        <bandwidth>100kbps</bandwidth>
+                        <optimize-timer>900</optimize-timer>
+                        <smart-optimize-timer>180</smart-optimize-timer>
+                        <cspf-status>Reoptimization in 102 second(s).</cspf-status>
+                        <cspf-status>
+                            Computed ERO (S [L] denotes strict [loose] hops): (CSPF metric: 100)
+                        </cspf-status>
+                        <explicit-route heading="          ">
+                            <address>10.1.254.1</address>
+                            <explicit-route-type>S</explicit-route-type>
+                        </explicit-route>
+                        <received-rro>
+                            Received RRO (ProtectionFlag 1=Available 2=InUse 4=B/W 8=Node 10=SoftPreempt 20=Node-ID):
+                                  88.88.88.88(flag=0x20) 10.1.254.1(Label=0)
+                        </received-rro>
+                    </mpls-lsp-path>
+                </mpls-lsp>
+            </rsvp-session>
+            <rsvp-session junos:style="detail">
+                <mpls-lsp>
+                    <destination-address>99.99.99.99</destination-address>
+                    <source-address>77.77.77.77</source-address>
+                    <lsp-state>Up</lsp-state>
+                    <route-count>0</route-count>
+                    <name>VMX7-VMX9</name>
+                    <lsp-description></lsp-description>
+                    <active-path> (primary)</active-path>
+                    <is-nodeprotection/>
+                    <lsp-type>Static Configured</lsp-type>
+                    <egress-label-operation>Penultimate hop popping</egress-label-operation>
+                    <load-balance>least-fill</load-balance>
+                    <mpls-lsp-autobandwidth>
+                        <minimum-bandwidth>100kbps</minimum-bandwidth>
+                        <maximum-bandwidth>100Gbps</maximum-bandwidth>
+                        <adjust-timer>540</adjust-timer>
+                        <adjust-threshold>5</adjust-threshold>
+                        <maximum-average-bandwidth>0bps</maximum-average-bandwidth>
+                        <time-to-adjust>535</time-to-adjust>
+                        <overflow-limit>0</overflow-limit>
+                        <overflow-sample-count>0</overflow-sample-count>
+                        <underflow-limit>0</underflow-limit>
+                        <underflow-sample-count>0</underflow-sample-count>
+                        <underflow-max-avg-bandwidth>0bps</underflow-max-avg-bandwidth>
+                    </mpls-lsp-autobandwidth>
+                    <mpls-lsp-attributes>
+                        <encoding-type>Packet</encoding-type>
+                        <switching-type>Packet</switching-type>
+                        <gpid>IPv4</gpid>
+                        <mpls-lsp-upstream-label>
+                        </mpls-lsp-upstream-label>
+                    </mpls-lsp-attributes>
+                    <mpls-lsp-path>
+                        <title>Primary</title>
+                        <name></name>
+                        <path-active/>
+                        <path-state>Up</path-state>
+                        <setup-priority>7</setup-priority>
+                        <hold-priority>0</hold-priority>
+                        <bandwidth>100kbps</bandwidth>
+                        <optimize-timer>900</optimize-timer>
+                        <smart-optimize-timer>180</smart-optimize-timer>
+                        <cspf-status>Reoptimization in 232 second(s).</cspf-status>
+                        <cspf-status>
+                            Computed ERO (S [L] denotes strict [loose] hops): (CSPF metric: 100)
+                        </cspf-status>
+                        <explicit-route heading="          ">
+                            <address>10.1.254.5</address>
+                            <explicit-route-type>S</explicit-route-type>
+                        </explicit-route>
+                        <received-rro>
+                            Received RRO (ProtectionFlag 1=Available 2=InUse 4=B/W 8=Node 10=SoftPreempt 20=Node-ID):
+                                  99.99.99.99(flag=0x20) 10.1.254.5(Label=0)
+                        </received-rro>
+                    </mpls-lsp-path>
+                </mpls-lsp>
+            </rsvp-session>
+            <display-count>2</display-count>
+            <up-count>2</up-count>
+            <down-count>0</down-count>
+        </rsvp-session-data>
+    </mpls-lsp-information>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>
